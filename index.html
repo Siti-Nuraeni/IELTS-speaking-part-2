@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IELTS Speaking Part 2 — Practice Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F5F7; --sheet:#FFFFFF; --ink:#1B2A3A; --muted:#5A6878; --rule:#D3DCE3;
+  --accent:#2F5D8A; --accent-ink:#FFFFFF; --hl:#FBE27A; --hl-ink:#1B2A3A;
+  --good:#2E7D5B; --warn:#B7791F; --bad:#B6452C; --soft:#E6EDF2;
+  --serif:"Literata", Georgia, "Times New Roman", serif;
+  --sans:"Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#121A21; --sheet:#1A242D; --ink:#E4EBF0; --muted:#9AAAB8; --rule:#2C3A46;
+    --accent:#7FB0DD; --accent-ink:#0E1820; --hl:#5C4C12; --hl-ink:#FFF4C9;
+    --good:#6CC79C; --warn:#E3B45C; --bad:#EE8C74; --soft:#22303B; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121A21; --sheet:#1A242D; --ink:#E4EBF0; --muted:#9AAAB8; --rule:#2C3A46;
+  --accent:#7FB0DD; --accent-ink:#0E1820; --hl:#5C4C12; --hl-ink:#FFF4C9;
+  --good:#6CC79C; --warn:#E3B45C; --bad:#EE8C74; --soft:#22303B; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--sheet)}
+a{color:var(--accent)}
+button,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--sheet);border-bottom:1px solid var(--rule)}
+.top-inner{max-width:1080px;margin:0 auto;padding:.6rem 1rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.1rem;text-decoration:none;color:var(--ink);margin-right:auto}
+nav.tabs{display:flex;gap:.25rem;overflow-x:auto}
+nav.tabs a{text-decoration:none;color:var(--muted);padding:.45rem .8rem;border-radius:999px;white-space:nowrap;font-weight:700;font-size:.95rem}
+nav.tabs a[aria-current="page"]{background:var(--soft);color:var(--ink)}
+
+main{max-width:1080px;margin:0 auto;padding:1.5rem 1rem 4rem}
+.view{display:none}
+.view.on{display:block}
+
+/* Hero */
+.hero{padding:2.5rem 0 2rem;border-bottom:1px solid var(--rule)}
+.hero .who{font-size:.95rem;color:var(--muted);margin:0 0 .6rem}
+.hero blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.8rem,4.6vw,3.1rem);line-height:1.15;font-weight:600;max-width:22ch;min-height:2.3em}
+.hero .lead{max-width:60ch;color:var(--muted);margin:1.2rem 0 1.4rem}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid var(--rule);background:var(--sheet);padding:.6rem 1rem;border-radius:10px;cursor:pointer;font-weight:700;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;gap:.4rem}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.small{padding:.35rem .7rem;font-size:.9rem;border-radius:8px}
+.btn.rec{border-color:var(--bad);color:var(--bad)}
+.btn.rec.live{background:var(--bad);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+h2{font-family:var(--serif);font-size:1.7rem;line-height:1.2;margin:2.2rem 0 .6rem}
+h3{font-family:var(--serif);font-size:1.25rem;margin:1.6rem 0 .4rem}
+p.note{color:var(--muted);max-width:65ch}
+
+/* Guide */
+.formula{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--rule);border-radius:12px;background:var(--sheet);overflow:hidden;margin:1rem 0}
+.formula div{padding:1rem 1.1rem;border-right:1px solid var(--rule)}
+.formula div:last-child{border-right:0}
+.formula strong{display:block;font-family:var(--serif);font-size:1.15rem}
+.formula span{color:var(--muted);font-size:.95rem}
+.example{background:var(--sheet);border-left:4px solid var(--accent);padding:1rem 1.2rem;border-radius:0 10px 10px 0;max-width:72ch;font-family:var(--serif);line-height:1.7}
+.example em{font-style:normal;font-family:var(--sans);font-size:.8rem;font-weight:700;color:var(--accent);background:var(--soft);padding:.05rem .4rem;border-radius:4px;margin-left:.2rem}
+.tablewrap{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;min-width:560px;width:100%;background:var(--sheet);border-radius:10px;overflow:hidden}
+th,td{text-align:left;padding:.7rem .9rem;border-bottom:1px solid var(--rule);vertical-align:top;font-size:.95rem}
+th{font-family:var(--serif);background:var(--soft)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.two ul{margin:.3rem 0;padding-left:1.2rem}
+.two li{margin:.35rem 0}
+
+/* Book */
+.book{display:grid;grid-template-columns:220px minmax(0,1fr);gap:2rem;align-items:start}
+.toc{position:sticky;top:calc(env(safe-area-inset-top,0px) + 76px)}
+.toc ol{list-style:none;margin:0;padding:0;border-left:2px solid var(--rule)}
+.toc a{display:block;padding:.3rem .8rem;text-decoration:none;color:var(--muted);font-size:.95rem;margin-left:-2px;border-left:2px solid transparent}
+.toc a:hover{color:var(--ink);border-left-color:var(--accent)}
+.toc .count{float:right;font-size:.8rem}
+.toolbar{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:.7rem 1rem;margin-bottom:1rem}
+.toolbar label{display:flex;gap:.4rem;align-items:center;cursor:pointer;font-size:.95rem}
+.topic{background:var(--sheet);border:1px solid var(--rule);border-radius:14px;padding:1.3rem 1.4rem;margin-bottom:1.4rem}
+.topic header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:.6rem;margin-bottom:.4rem}
+.topic h3{margin:0;font-size:1.45rem}
+.topic .chapter{color:var(--muted);font-size:.9rem}
+.qa{padding:1rem 0;border-bottom:1px dashed var(--rule)}
+.qa:last-of-type{border-bottom:0}
+.q{font-family:var(--serif);font-weight:600;font-size:1.12rem;margin:0 0 .5rem}
+.a{font-family:var(--serif);line-height:1.75;max-width:70ch;margin:.6rem 0 0;display:none}
+.a.open{display:block}
+body.show-all .a{display:block}
+body.show-all .reveal{display:none}
+mark{background:var(--hl);color:var(--hl-ink);padding:0 .15em;border-radius:3px}
+body.no-hl mark{background:none;color:inherit;padding:0}
+.tip{background:var(--soft);border-radius:10px;padding:.8rem 1rem;font-size:.95rem;margin-top:.8rem}
+.tip b{font-family:var(--serif)}
+.qa .row{gap:.4rem}
+.done-badge{font-size:.8rem;color:var(--good);font-weight:700}
+
+/* Mock */
+.panel{background:var(--sheet);border:1px solid var(--rule);border-radius:14px;padding:1.4rem}
+.exam{max-width:760px;margin:0 auto}
+.exam .topicline{color:var(--muted);margin:0 0 .4rem}
+.exam .bigq{font-family:var(--serif);font-size:clamp(1.5rem,3.6vw,2.2rem);line-height:1.25;font-weight:600;margin:.2rem 0 1.2rem;min-height:2.5em}
+.progressline{height:6px;background:var(--soft);border-radius:999px;overflow:hidden;margin-bottom:1.2rem}
+.progressline span{display:block;height:100%;background:var(--accent);transition:width .3s}
+.timer{font-variant-numeric:tabular-nums;font-size:2.4rem;font-weight:700;font-family:var(--serif)}
+.timebar{position:relative;height:12px;border-radius:999px;background:var(--soft);overflow:hidden;margin:.4rem 0 .3rem}
+.timebar .zone{position:absolute;top:0;bottom:0;left:50%;width:37.5%;background:color-mix(in srgb,var(--good) 28%,transparent)}
+.timebar .fill{position:absolute;top:0;bottom:0;left:0;width:0;background:var(--accent);opacity:.85}
+.timehint{font-size:.9rem;color:var(--muted);min-height:1.4em}
+.status{font-size:.9rem;color:var(--muted);margin-top:.6rem;min-height:1.3em}
+.review .item{border-top:1px solid var(--rule);padding:1rem 0}
+.review .meta{font-size:.85rem;color:var(--muted)}
+.setup label{display:flex;gap:.5rem;align-items:center;margin:.4rem 0;cursor:pointer}
+
+/* Practice */
+.practice{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:1.4rem;align-items:start}
+textarea{width:100%;min-height:150px;border:1px solid var(--rule);border-radius:10px;padding:.8rem;background:var(--paper);resize:vertical;font-family:var(--serif);line-height:1.6}
+select{border:1px solid var(--rule);border-radius:8px;padding:.45rem .6rem;background:var(--sheet)}
+.feedback{font-size:.92rem;margin-top:.6rem}
+.feedback .chip{display:inline-block;background:var(--soft);border-radius:999px;padding:.1rem .55rem;margin:.15rem .2rem 0 0;font-size:.85rem}
+.check label{display:flex;gap:.55rem;align-items:flex-start;margin:.5rem 0;cursor:pointer;font-size:.95rem}
+.check input{margin-top:.3rem}
+.score{font-family:var(--serif);font-size:1.1rem;margin-top:.6rem}
+.bars .b{margin:.45rem 0;font-size:.9rem}
+.bars .track{height:7px;background:var(--soft);border-radius:999px;overflow:hidden;margin-top:.2rem}
+.bars .track span{display:block;height:100%;background:var(--good)}
+audio{width:100%;margin-top:.6rem}
+.side h3{margin-top:0}
+.side .panel+.panel{margin-top:1.2rem}
+
+.desc-table td{min-width:200px;font-size:.88rem;line-height:1.45}
+.desc-table td:first-child{min-width:0;font-family:var(--serif);font-weight:700;font-size:1.3rem;text-align:center;background:var(--soft)}
+details summary{cursor:pointer;color:var(--accent);font-weight:700}
+.report{margin-top:1.2rem;border-top:2px solid var(--ink);padding-top:1rem}
+.overall{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
+.overall .big{font-family:var(--serif);font-size:3.2rem;font-weight:700;line-height:1}
+.overall .lbl{color:var(--muted)}
+.crit{display:grid;grid-template-columns:3.2rem minmax(0,1fr);gap:.8rem;padding:.9rem 0;border-bottom:1px solid var(--rule)}
+.crit .band{font-family:var(--serif);font-size:1.6rem;font-weight:700;text-align:center;background:var(--soft);border-radius:10px;padding:.3rem 0;align-self:start}
+.crit h4{margin:0 0 .2rem;font-size:1rem}
+.crit p{margin:.2rem 0;font-size:.95rem}
+.crit .ev{font-family:var(--serif);font-style:italic;color:var(--muted)}
+.crit details{font-size:.88rem;margin-top:.3rem}
+.crit details p{color:var(--muted)}
+.report ul{padding-left:1.2rem;margin:.3rem 0}
+.report li{margin:.3rem 0;font-size:.95rem}
+.fix{font-size:.93rem;margin:.3rem 0}
+.fix s{color:var(--bad)}
+.fix b{color:var(--good)}
+.caveat{font-size:.85rem;color:var(--muted);background:var(--soft);border-radius:8px;padding:.6rem .8rem;margin-top:1rem}
+.grading{display:flex;gap:.6rem;align-items:center;color:var(--muted);margin-top:1rem}
+.spin{width:16px;height:16px;border:2px solid var(--rule);border-top-color:var(--accent);border-radius:50%;animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.live-tr{font-family:var(--serif);color:var(--muted);font-style:italic;min-height:1.4em;margin-top:.4rem}
+.review textarea{min-height:90px;margin-top:.4rem}
+footer{color:var(--muted);font-size:.85rem;text-align:center;padding:2rem 1rem}
+
+@media (max-width:820px){
+  .book{grid-template-columns:1fr}
+  .toc{position:static}
+  .toc ol{display:flex;gap:.3rem;overflow-x:auto;border-left:0;padding-bottom:.3rem}
+  .toc a{border:1px solid var(--rule);border-radius:999px;white-space:nowrap;margin:0}
+  .toc .count{display:none}
+  .practice{grid-template-columns:1fr}
+  .formula{grid-template-columns:1fr}
+  .formula div{border-right:0;border-bottom:1px solid var(--rule)}
+  .two{grid-template-columns:1fr}
+  .topic{padding:1.1rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.hero2{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:2.5rem;align-items:center}
+.hero2 h1{font-family:var(--serif);font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.1;margin:0 0 .8rem}
+.hero2 .lead{margin-top:0}
+.cue{background:var(--sheet);border:1px solid var(--rule);border-top:6px solid var(--accent);border-radius:6px;padding:1.3rem 1.5rem 1.4rem;box-shadow:0 1px 0 var(--rule),0 12px 28px -18px rgba(20,40,60,.45);max-width:520px}
+.cue .cue-p{font-family:var(--serif);font-size:1.35rem;font-weight:700;line-height:1.3;margin:0 0 .8rem}
+.cue .cue-s{margin:0 0 .3rem;color:var(--muted)}
+.cue ul{margin:0 0 .6rem;padding-left:1.3rem}
+.cue li{margin:.2rem 0}
+.cue .cue-e{margin:0;font-weight:700}
+.hero2 .cue{transform:rotate(-1.2deg)}
+@media (prefers-reduced-motion:reduce){.hero2 .cue{transform:none}}
+.notepad{background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:1rem 1.2rem;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 1.85rem,var(--rule) 1.85rem,var(--rule) calc(1.85rem + 1px));background-position:0 2.6rem}
+.notepad .np-title{font-weight:700;margin:0 0 .5rem}
+.notepad ul{list-style:none;padding:0;margin:0}
+.notepad li{line-height:1.85rem;font-family:var(--serif);font-style:italic}
+.notes-ta{min-height:120px;font-family:var(--serif);font-style:italic}
+.notes-pre{white-space:pre-wrap;font-family:var(--serif);font-style:italic;margin:.4rem 0 0;color:var(--muted)}
+.examiner{font-family:var(--serif);font-size:1.1rem;color:var(--muted);margin:.2rem 0 1rem;max-width:62ch}
+.followq{border-top:1px dashed var(--rule);padding:.8rem 0}
+.followq .q{font-size:1.02rem}
+.answer p{margin:0 0 .8rem}
+.cov{display:flex;gap:.6rem;align-items:baseline;font-size:.95rem;margin:.3rem 0}
+.cov .mk{font-weight:700;min-width:4.5rem}
+.cov .yes{color:var(--good)} .cov .partly{color:var(--warn)} .cov .no{color:var(--bad)}
+.meta{font-size:.85rem;color:var(--muted)}
+@media (max-width:820px){ .hero2{grid-template-columns:1fr} .hero2 .cue{transform:none} }
+
+#mockTalk .zone,#pTalkBox .zone{left:75%;width:25%}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#home">Speaking Part 2 Book</a>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#home" data-v="home">Guide</a>
+      <a href="#book" data-v="book">Cue cards &amp; answers</a>
+      <a href="#mock" data-v="mock">Mock test</a>
+      <a href="#practice" data-v="practice">Self-practice</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HOME -->
+<section class="view" id="view-home">
+  <div class="hero hero2">
+    <div>
+      <p class="who">Here’s your topic. You have one minute to prepare.</p>
+      <div id="heroCard"></div>
+      <div class="row" style="margin-top:1rem">
+        <button class="btn small" id="heroNext" type="button">Show another card</button>
+      </div>
+    </div>
+    <div class="hero-side">
+      <h1>The long turn, practised properly</h1>
+      <p class="lead">10 exam-style cue cards, each with model notes, a Band 7–8 model answer and follow-up questions. Sit a timed mock with real exam timing, then practise on your own. Every talk is transcribed and graded against the official IELTS Speaking band descriptors.</p>
+      <div class="row">
+        <a class="btn primary" href="#mock">Start a mock test</a>
+        <a class="btn" href="#book">Read the cue cards</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>How Part 2 works</h2>
+  <p class="note">Part 2 lasts 3–4 minutes. The examiner hands you a task card, paper and a pencil.</p>
+  <div class="formula">
+    <div><strong>1 minute to prepare</strong><span>Read the card and make notes. You can’t talk yet.</span></div>
+    <div><strong>1–2 minutes to talk</strong><span>Speak without interruption. The examiner stops you at 2 minutes.</span></div>
+    <div><strong>1–2 follow-up questions</strong><span>Short answers that round off the topic before Part 3.</span></div>
+  </div>
+
+  <h2>Using your preparation minute</h2>
+  <p class="note">Write key words, not sentences. One line per bullet point, plus one or two “wow” words you want to use. Full sentences take too long and tempt you to read aloud.</p>
+  <div class="two">
+    <div class="notepad" aria-label="Example notes">
+      <p class="np-title">Example notes: a person who inspired you</p>
+      <ul><li>Mrs Lim, chemistry teacher, age 15</li><li>bad at science, ‘written it off’</li><li>experiments: burning note</li><li>stayed after school</li><li>nearly failing → top grade</li><li>ability isn’t fixed → confidence</li></ul>
+    </div>
+    <div>
+      <h3 style="margin-top:0">A two-minute structure</h3>
+      <div class="tablewrap" style="margin:0"><table>
+        <thead><tr><th>Time</th><th>What to say</th></tr></thead>
+        <tbody>
+          <tr><td>0:00–0:15</td><td>Introduce the topic in one or two sentences.</td></tr>
+          <tr><td>0:15–1:15</td><td>Cover the bullet points with real detail: names, times, a small story.</td></tr>
+          <tr><td>1:15–1:50</td><td>The “explain” point. Give two reasons and develop them.</td></tr>
+          <tr><td>1:50–2:00</td><td>Reflect: how you feel now, or what you learned.</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <h2>The band descriptors used for grading</h2>
+  <p class="note">Examiners score four criteria equally. Your talks are graded against these official descriptors. Each criterion gets a whole band, and the overall score is their average, rounded to the nearest half band.</p>
+  <div class="tablewrap"><table class="desc-table" id="descTable"></table></div>
+  <details style="margin:.4rem 0 1rem"><summary>Show bands 3 to 0</summary><div class="tablewrap"><table class="desc-table" id="descTableLow"></table></div></details>
+  <p class="note">Notes from the descriptors: a candidate must fully fit the positive features of the descriptor at a particular level, and the real test rates average performance across all three parts. A Part 2 grade here is an estimate of your level, not an official score.</p>
+
+  <div class="two">
+    <div>
+      <h3>Do</h3>
+      <ul>
+        <li>Keep talking until the examiner stops you. Aim for at least 1 minute 30 seconds.</li>
+        <li>Signpost: “The main reason…”, “Looking back…”, “As for how I felt…”.</li>
+        <li>Tell a small story with narrative tenses. Stories are easy to extend.</li>
+        <li>If your mind goes blank, describe a detail: what it looked like, who was there.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Avoid</h3>
+      <ul>
+        <li>Stopping after one minute. Short talks can’t show Band 7 fluency.</li>
+        <li>Reading your notes aloud or reciting a memorised speech.</li>
+        <li>Spending so long on the first bullet that you never reach “explain why”.</li>
+        <li>Long silences while you think. Use fillers like “Let me think…” naturally.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="view" id="view-book">
+  <h2 style="margin-top:0">Cue cards &amp; model answers</h2>
+  <p class="note">Give yourself a minute to prepare and try the card aloud before you reveal the model. Highlighted phrases are the Band 7–8 language worth borrowing.</p>
+  <div class="book">
+    <aside class="toc" aria-label="Cue cards"><ol id="toc"></ol></aside>
+    <div>
+      <div class="toolbar">
+        <label><input type="checkbox" id="showAll"> Show all answers</label>
+        <label><input type="checkbox" id="showHl" checked> Highlight key language</label>
+      </div>
+      <div id="bookBody"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MOCK -->
+<section class="view" id="view-mock">
+  <div class="exam">
+    <div id="mockSetup" class="panel setup">
+      <h2 style="margin-top:0">Mock test</h2>
+      <p class="note">A full Part 2 with exam timing: one minute to prepare, up to two minutes to talk (the examiner stops you at 2:00), then one or two follow-up questions. You’ll get your grade and the model answer at the end.</p>
+      <label><input type="checkbox" id="optSpeak" checked> Read the examiner’s instructions aloud</label>
+      <label><input type="checkbox" id="optTr" checked> Transcribe my talk so it can be graded (uses the microphone)</label>
+      <label><input type="checkbox" id="optRec"> Also keep an audio recording to listen back</label>
+      <div class="row" style="margin-top:1rem">
+        <button class="btn primary" type="button" id="mockStart">Start the test</button>
+      </div>
+    </div>
+
+    <div id="mockRun" class="panel" hidden>
+      <p class="topicline" id="mockStage"></p>
+      <p class="examiner" id="mockSay"></p>
+      <div id="mockCard"></div>
+      <div id="mockPrep" hidden>
+        <div class="timer" id="mockPrepTime">1:00</div>
+        <div class="timebar"><div class="fill" id="mockPrepFill" style="width:100%"></div></div>
+        <label class="meta" for="mockNotes">Your notes</label>
+        <textarea id="mockNotes" class="notes-ta" placeholder="Key words only: one line per bullet point."></textarea>
+      </div>
+      <div id="mockTalk" hidden>
+        <div class="timer" id="mockTime">0:00</div>
+        <div class="timebar"><div class="zone"></div><div class="fill" id="mockFill"></div></div>
+        <div class="timehint" id="mockHint"></div>
+        <details id="mockNotesView" style="margin-top:.5rem"><summary>Your notes</summary><pre class="notes-pre" id="mockNotesPre"></pre></details>
+      </div>
+      <p class="live-tr" id="mockLive"></p>
+      <div class="row" style="margin-top:1rem">
+        <button class="btn primary" type="button" id="mockNext">Start speaking now</button>
+        <button class="btn" type="button" id="mockEnd">End test</button>
+      </div>
+      <div class="status" id="mockStatus"></div>
+    </div>
+
+    <div id="mockReview" class="panel review" hidden>
+      <h2 style="margin-top:0">Your mock test review</h2>
+      <p class="note" id="mockSummary"></p>
+      <div id="mockAudio"></div>
+      <div class="row"><button class="btn primary" type="button" id="mockGrade">Grade my test</button></div>
+      <div id="mockReport"></div>
+      <h3>Your answers and the model answers</h3>
+      <p class="note">Check the transcripts before grading. Fix any words the speech recognition got wrong, or type what you said if it missed something.</p>
+      <div id="mockItems"></div>
+      <div class="row" style="margin-top:1rem">
+        <button class="btn primary" type="button" id="mockAgain">Take another test</button>
+        <a class="btn" href="#practice">Go to self-practice</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICE -->
+<section class="view" id="view-practice">
+  <h2 style="margin-top:0">Self-practice</h2>
+  <p class="note">Choose a card, prepare for one minute, then talk. Speaking starts automatically when your preparation time ends, just like the exam. Your notes, transcripts and progress stay in this browser.</p>
+  <div class="practice">
+    <div class="panel">
+      <div class="row" style="justify-content:space-between">
+        <label class="row" style="gap:.4rem">Card
+          <select id="pCard"></select>
+        </label>
+        <button class="btn" type="button" id="pNew">Random card</button>
+      </div>
+      <div id="pCardView" style="margin-top:1rem"></div>
+
+      <div class="row" style="margin-top:1rem">
+        <button class="btn" type="button" id="pListen">Hear the card</button>
+        <button class="btn primary" type="button" id="pPrep">Start 1-minute preparation</button>
+        <button class="btn" type="button" id="pSpeak">Skip to speaking</button>
+      </div>
+
+      <div id="pPrepBox" hidden>
+        <div class="timer" id="pPrepTime" style="margin-top:.8rem">1:00</div>
+        <div class="timebar"><div class="fill" id="pPrepFill" style="width:100%"></div></div>
+      </div>
+      <label class="meta" for="pNotes" style="display:block;margin-top:.8rem">Your notes</label>
+      <textarea id="pNotes" class="notes-ta" placeholder="Key words only: one line per bullet point."></textarea>
+
+      <div id="pTalkBox" hidden>
+        <div class="timer" id="pTime" style="margin-top:.8rem">0:00</div>
+        <div class="timebar"><div class="zone"></div><div class="fill" id="pFill"></div></div>
+        <div class="timehint" id="pHint"></div>
+      </div>
+      <p class="live-tr" id="pLive"></p>
+      <div id="pAudio"></div>
+      <div class="status" id="pStatus"></div>
+
+      <h3>Your talk</h3>
+      <textarea id="pDraft" placeholder="Your talk appears here as a transcript. Fix any recognition mistakes, or type what you said if the microphone isn’t available."></textarea>
+      <div class="feedback" id="pFeedback"></div>
+
+      <div class="row" style="margin-top:1rem">
+        <button class="btn primary" type="button" id="pGrade">Grade my talk</button>
+        <button class="btn" type="button" id="pModel">Compare with model answer</button>
+        <button class="btn" type="button" id="pDone">Mark as practised</button>
+      </div>
+      <div id="pReport"></div>
+      <div class="a" id="pModelText" style="margin-top:1rem"></div>
+
+      <h3>Follow-up questions</h3>
+      <div id="pFollow"></div>
+    </div>
+
+    <div class="side">
+      <div class="panel check">
+        <h3>Self-check</h3>
+        <p class="note" style="margin:.2rem 0 .4rem;font-size:.9rem">Tick what was true of your talk.</p>
+        <label><input type="checkbox" data-c> I wrote key words, not full sentences.</label>
+        <label><input type="checkbox" data-c> I covered every bullet point, including “explain”.</label>
+        <label><input type="checkbox" data-c> I spoke for at least 1 minute 30 seconds.</label>
+        <label><input type="checkbox" data-c> I kept going without long silences.</label>
+        <label><input type="checkbox" data-c> I signposted my talk (the main reason…, looking back…).</label>
+        <label><input type="checkbox" data-c> I used a range of tenses accurately.</label>
+        <label><input type="checkbox" data-c> I used some less common words or natural idioms.</label>
+        <label><input type="checkbox" data-c> I included a specific detail or small story.</label>
+        <div class="score" id="pScore">Tick the boxes to check yourself.</div>
+      </div>
+      <div class="panel">
+        <h3>Your progress</h3>
+        <p id="pTotal" style="margin:.2rem 0"></p>
+        <div class="bars" id="pBars"></div>
+        <button class="btn small" type="button" id="pReset" style="margin-top:.8rem">Reset progress</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Model answers are written to show Band 7–8 features. Automatic grades are estimates based on the IELTS Speaking band descriptors, not official scores.</footer>
+
+<script>
+const CARDS = [
+ {id:"person", cat:"A person", title:"A person who inspired you", prompt:"Describe a person who has inspired you.",
+  bullets:["who this person is","how you know this person","what this person has done"], explain:"and explain why this person inspired you.",
+  notes:["Mrs Lim, chemistry teacher, age 15","bad at science, ‘written it off’","experiments: burning note","stayed after school","nearly failing → top grade","ability isn’t fixed → confidence"],
+  answer:"I'd like to talk about my secondary-school chemistry teacher, Mrs Lim, who [[had a huge influence on]] me at a time when I was fairly unmotivated.\n\nI first met her when I was fifteen. To be honest, I'd always [[struggled with]] science, and I'd more or less [[written it off]] as a subject I'd never be good at. She was quite strict at first, so I wasn't particularly looking forward to her lessons.\n\nWhat she did, though, was [[completely change the way]] I saw the subject. Instead of making us memorise formulas, she'd [[bring abstract ideas to life]] with experiments. I still remember her setting fire to a banknote soaked in alcohol and water, which didn't burn, and asking us to work out why. She also [[stayed behind after school]] almost every day to help anyone who was [[falling behind]], and she never made us feel stupid for asking basic questions.\n\nThe reason she inspired me is that she showed me that ability isn't fixed. By the end of that year, I'd gone from nearly failing to getting one of the top grades in my class, and more importantly, I'd [[gained the confidence]] to take on things I found difficult. Looking back, I think that's [[shaped the way I approach]] challenges even now. Whenever I'm struggling with something, I [[remind myself]] that I probably just haven't found the right way to learn it yet. If I ever became a teacher, I'd want to be [[just like her]].",
+  follow:[["Do you think famous people make good role models?","Some do, but [[on the whole]] I'd say they're less reliable than people we actually know. Celebrities are often admired for their image rather than their character, whereas a teacher or a parent shows you how to deal with real problems."],
+   ["Who influences children more, parents or teachers?","Probably parents, especially in the early years, because children [[pick up]] their values at home before they even start school. Teachers become more influential later, though, particularly when it comes to [[shaping]] their interests."]],
+  tip:"Use the past perfect (“I’d always struggled”) to show what happened before the main story. It’s an easy way to show grammatical range."},
+ {id:"place", cat:"A place", title:"A place you would like to visit again", prompt:"Describe a place you visited that you would like to visit again.",
+  bullets:["where it is","when you went there","what you did there"], explain:"and explain why you would like to visit it again.",
+  notes:["Koh Lanta, quiet island, S Thailand","2 yrs ago, cousin, after exams","bungalow, motorbikes, east side","family restaurant, green curry","snorkelling, clear water","only 5 days → diving course","first trip I organised, independence"],
+  answer:"The place I'd love to go back to is Koh Lanta, a fairly quiet island off the south-west coast of Thailand. It's [[nowhere near as]] crowded as Phuket, which is exactly why I liked it.\n\nI went there about two years ago with my cousin, right after we'd both finished our final exams, so we were [[in the mood to]] do absolutely nothing for a while. We rented a little wooden bungalow just a few steps from the beach.\n\nMost days followed the same [[blissfully lazy]] pattern. We'd get up early to swim before it got too hot, then rent motorbikes and explore the island. The east side is much less developed, with fishing villages and mangrove forests, and we [[stumbled upon]] a tiny family-run restaurant that served the best green curry I've ever had. One day we also took a boat trip to some nearby islands to go snorkelling, and the water was so clear you could see the fish [[without even putting your head under]].\n\nThe main reason I'd like to go back is that I feel I only [[scratched the surface]]. We were only there for five days, and I'd love to spend longer and maybe take a diving course, since the area is [[renowned for]] its coral reefs. But there's also a more personal reason: it was the first trip I'd organised [[entirely on my own]], and it gave me a real [[sense of independence]]. Going back would be a nice way to [[relive that feeling]], although I suspect it's become [[a lot more touristy]] since then.",
+  follow:[["Why do some people prefer to return to the same holiday destination?","I think it's mainly about [[peace of mind]]. If you already know a place, you don't have to worry about planning or [[being let down]]. For people with stressful jobs, a familiar holiday is relaxing in a way an unknown destination can't be."],
+   ["Does tourism do more good than harm?","It depends on how it's managed. It [[brings in]] jobs and money, but uncontrolled tourism can damage the environment and push up prices for locals. I think limits on visitor numbers in fragile areas are a [[sensible compromise]]."]],
+  tip:"Open with the place and one standout feature, then use the bullet points as your map. The examiner doesn’t mind if you cover them in your own order."},
+ {id:"tech", cat:"An object", title:"A useful piece of technology", prompt:"Describe a piece of technology you own that you find useful.",
+  bullets:["what it is","when you got it","how you use it"], explain:"and explain why you find it useful.",
+  notes:["noise-cancelling headphones","last year, flat next to building site","‘splashed out’ after reviews","home study, 1-hr train, flights","own quiet space, productive, less stressed","downside: too reliant, tune out"],
+  answer:"I'm going to talk about my noise-cancelling headphones, which [[might sound like a luxury]], but they've genuinely made a difference to my daily life.\n\nI bought them last year, mainly out of desperation. I'd just moved into a flat next to a construction site, and the drilling started at seven every morning, so I [[splashed out on]] a decent pair after reading a lot of reviews.\n\nI use them in all sorts of situations. Obviously I wear them at home when I need to concentrate, but they're also [[a lifesaver]] on public transport. My commute is about an hour each way on a packed train, and with the noise cancelling on, I can listen to a podcast or even study without being [[distracted by]] announcements and conversations. I also take them on flights, where they [[block out]] the engine noise almost completely.\n\nThe reason they're so useful is that they let me [[create my own quiet space]] wherever I am. I live in a big, noisy city, so silence is [[hard to come by]], and I've realised that I'm far more productive, and far less stressed, when I'm not constantly [[bombarded with]] noise. If anything, my only worry is that I've become [[a bit too reliant on]] them. A friend once pointed out that I sometimes [[tune out]] the world completely, so I'm trying to take them off when I'm with other people. Still, [[on balance]], they're probably the best thing I've bought in years.",
+  follow:[["Do you think people rely too much on technology?","In many ways, yes. Most of us can't remember phone numbers or find our way without an app. That said, relying on tools isn't new, so I think the real issue is [[what happens when it fails]]."],
+   ["What kinds of technology do older people find difficult to use?","Mainly anything app-based, like online banking. Many services have [[gone digital]] almost overnight, and older people who aren't [[tech-savvy]] can feel [[left behind]], so I think there should always be an offline alternative."]],
+  tip:"Admit a downside near the end (“If anything, my only worry is…”). A balanced view helps you keep talking naturally towards the two-minute mark."},
+ {id:"helped", cat:"An experience", title:"A time you helped someone", prompt:"Describe a time when you helped someone.",
+  bullets:["who you helped","when it happened","how you helped this person"], explain:"and explain how you felt about helping this person.",
+  notes:["Mr Tan, elderly neighbour, floor below","last year, rainy season","daughter knocking, worried","spare key → found him on floor, ankle","hospital, groceries for weeks","relief + guilt → isolation, now friends"],
+  answer:"I'd like to describe a time I helped an elderly neighbour of mine, Mr Tan, who lives alone on the floor below me.\n\nThis happened last year during the rainy season. One evening I heard someone knocking repeatedly on his door and calling his name. It turned out to be his daughter, who'd been trying to [[get hold of]] him all day and was getting [[increasingly worried]]. She lived in another city and had driven over as soon as she could.\n\nLuckily, I knew that Mr Tan kept a spare key with the building manager, so I [[rushed downstairs]] to get it. When we opened the door, we found him sitting on the kitchen floor. He'd slipped and [[twisted his ankle]] badly and couldn't get up. He was conscious and quite embarrassed, but clearly in pain. I [[stayed with him]] while his daughter called an ambulance, and then I went with them to the hospital. In the weeks afterwards, I [[popped in]] most evenings to bring him groceries until he was [[back on his feet]].\n\nAs for how I felt, at the time it was mostly adrenaline, because I didn't really have time to think. Afterwards, though, I felt [[a mixture of relief and]], honestly, a bit of guilt, because I realised I'd lived above him for two years and barely said more than hello. The experience [[made me realise]] how [[isolated]] older people can be in apartment blocks. We've since become good friends, and he [[insists on]] cooking me dinner once a month to say thank you, which I [[wouldn't miss for the world]].",
+  follow:[["Should young people be expected to help elderly neighbours?","I wouldn't say expected, but [[encouraged]], definitely. Small things like carrying shopping cost very little, and they can [[make a real difference]] to someone who lives alone. It also builds a stronger sense of community."],
+   ["Why do people do voluntary work?","Partly for [[altruistic reasons]], of course, but also because it's rewarding. Many people say volunteering gives them a sense of purpose, and younger people often do it to [[gain experience]] for their CVs."]],
+  tip:"Story cards need narrative tenses: past simple for events, past continuous for background and past perfect for earlier events."},
+ {id:"skill", cat:"An activity", title:"A skill that took a long time to learn", prompt:"Describe a skill that took you a long time to learn.",
+  bullets:["what the skill is","when you started learning it","how you learned it"], explain:"and explain why it took you a long time to learn.",
+  notes:["guitar, age 16, friend at party","second-hand guitar, online videos","bad habits (wrist), hit a wall","teacher → back to basics, scales","why slow: sore fingers, not consistent, unlearning","now competent; little and often"],
+  answer:"The skill I'd like to talk about is playing the guitar, which [[took me far longer]] to learn than I ever expected.\n\nI started when I was about sixteen. A friend of mine could play really well, and I remember [[being in awe of]] him at a party, so I [[got my hands on]] an old second-hand guitar and decided to teach myself.\n\nAt first I learned entirely from online videos. I'd watch someone play a song, pause it, and try to copy their fingers. That worked for the basics, but I [[picked up]] a lot of bad habits, like holding my wrist at a strange angle. After about a year I [[hit a wall]]: I could play a few songs, but I just wasn't improving. So I eventually [[signed up for]] lessons with a proper teacher, who made me go back to basics and practise scales, which was [[painfully slow]] but made a huge difference.\n\nThere were a few reasons it took so long. Firstly, the early stage is [[physically demanding]]. Your fingertips hurt until you build up hard skin, which is quite [[off-putting]]. Secondly, I wasn't [[consistent]]. Whenever I had exams, I'd stop practising for weeks and then have to [[make up for lost time]]. And finally, unlearning those bad habits was harder than learning things correctly would have been in the first place.\n\nNow, about six years later, I'd say I'm a [[reasonably competent]] player. I'm nowhere near professional, but I can play most songs I like, and it's become a great way to [[unwind]]. If there's one lesson I took from it, it's that [[there are no shortcuts]]: [[little and often]] beats a burst of enthusiasm every time.",
+  follow:[["What practical skills should children learn at school?","Beyond academic subjects, I think [[life skills]] like managing money and cooking are [[sorely needed]]. Communication and teamwork are just as important, since they're what employers [[value most]]."],
+   ["Is it easier to learn a new skill as a child or as an adult?","Children generally [[pick things up]] faster, especially languages and music. But adults have advantages too: they're more motivated and can use better learning strategies, so it's [[by no means]] too late."]],
+  tip:"Signpost your reasons with firstly, secondly and finally. It keeps a long turn easy to follow, which is central to fluency and coherence."},
+ {id:"book", cat:"Media", title:"A book you enjoyed", prompt:"Describe a book you enjoyed reading.",
+  bullets:["what the book is","what it is about","when you read it"], explain:"and explain why you enjoyed reading it.",
+  notes:["Sapiens, Harari, non-fiction","history of humankind: language, farming, money","farming made life harder?","3 yrs ago, summer, airport sale, 1 week","style: plain, humour","changed thinking: money = shared trust","criticised: oversimplifies"],
+  answer:"I'd like to talk about Sapiens by Yuval Noah Harari, which is a non-fiction book about the history of humankind.\n\nEssentially, it [[traces the story]] of our species from the time when several kinds of humans existed side by side, right up to the modern day. It's organised around a few big turning points, such as the development of language, the switch to farming, and the rise of things like money and empires. What makes it unusual is that it [[challenges a lot of assumptions]]. For instance, the author argues that farming may actually have made life harder for the average person, not easier.\n\nI read it about three years ago, during a long summer holiday. A friend had [[recommended it to me]] several times, and I finally [[gave in]] when I saw it on sale at the airport. I [[got through]] the whole thing in about a week, which is quite unusual for me with non-fiction.\n\nThere are a couple of reasons I enjoyed it so much. The first is the writing style. The author [[has a knack for]] explaining complicated ideas in plain language, often with a bit of humour, so it never felt like a textbook. The second, and more important, reason is that it genuinely [[changed the way I think about]] everyday things. For example, I'd never really considered that money only works because millions of people [[collectively agree]] to trust it. After finishing it, I [[found myself]] bringing up ideas from it in conversations for months, probably to the annoyance of my friends. Some historians have criticised it for [[oversimplifying]] things, which is fair, but as an introduction to big ideas, I think it's [[hard to beat]].",
+  follow:[["What kinds of books are popular with young people in your country?","Fantasy and romance novels are [[hugely popular]], partly because of social media, where people recommend books in short videos. Self-help books also seem to be [[in vogue]] among university students."],
+   ["Should parents read to their children?","Absolutely. Reading aloud [[expands]] children's vocabulary and helps them develop a love of stories [[from an early age]]. It's also valuable time together, which is increasingly rare in busy households."]],
+  tip:"Don’t just summarise the plot. Spend most of your time on the “explain why” part, which is where higher-level vocabulary naturally appears."},
+ {id:"journey", cat:"An experience", title:"A memorable journey", prompt:"Describe a memorable journey you have made.",
+  bullets:["where you went","how you travelled","who you went with"], explain:"and explain why this journey was memorable.",
+  notes:["sleeper train Hanoi → Hue, 4 yrs ago","2 uni friends, tight budget, 13 hrs","tiny cabin, old man, shared food","translation app, railway worker 30 yrs","sunrise, coast, mist on rice fields","unplanned > museums; slow travel"],
+  answer:"I'd like to talk about an overnight train journey I took from Hanoi to Hue in Vietnam, about four years ago.\n\nI was travelling with two university friends during our semester break. We were [[on a tight budget]], so instead of flying we booked a sleeper cabin, which meant we'd save on a night's accommodation as well. The trip took around thirteen hours, leaving Hanoi in the evening and arriving in Hue the next morning.\n\nThe cabin was tiny, with four narrow bunks, and we [[shared it with]] an elderly Vietnamese man who didn't speak much English. At first it was a bit awkward, but he [[insisted on sharing]] his food with us, and using a translation app and a lot of gestures, we ended up chatting for hours. He'd worked on the railway for thirty years, and he showed us old photos of the line from when he was young.\n\nThere are several reasons it was so memorable. Firstly, the scenery was [[breathtaking]]. I woke up just before sunrise and the train was [[winding along the coast]], with mist over the rice fields on one side and the sea on the other. Secondly, it [[reminded me that]] the best travel experiences are often unplanned. That conversation was far more interesting than any museum we visited. And finally, it was simply [[a world away from]] flying. You actually [[get a sense of]] the distance and how the landscape changes.\n\nSince then, I've [[made a point of]] taking trains whenever I can, even when it's slower. In fact, I'd say that trip [[sparked]] my interest in slow travel.",
+  follow:[["Why is train travel becoming more popular?","Largely because of environmental concerns, since trains [[produce far fewer emissions]] than planes. They're also more comfortable, and for medium distances they can be [[just as fast]] once you factor in airport security."],
+   ["What are the disadvantages of travelling by car?","Traffic is the obvious one. In big cities you can spend hours [[stuck in traffic jams]]. Cars are also expensive to run and [[contribute to]] air pollution, so I think public transport is a better option where it's reliable."]],
+  tip:"Describe one moment vividly (the sunrise, the mist). Specific sensory detail makes a long turn sound natural rather than rehearsed."},
+ {id:"busy", cat:"An experience", title:"A time you were very busy", prompt:"Describe a time when you were very busy.",
+  bullets:["when it was","what you had to do","how you managed"], explain:"and explain how you felt during this time.",
+  notes:["end of 2nd year at uni","3 assignments in 10 days + exams","café job 20 hrs/week, charity event","calendar, mini-deadlines","asked manager → weekends only","delegated to first-years","overwhelmed → proud; ask for help"],
+  answer:"I'd like to talk about the final month of my second year at university, which was probably the busiest period of my life so far.\n\nThat month, I had three major assignments due within ten days of each other, final exams straight afterwards, and on top of that I was working part-time at a café twenty hours a week to [[cover my rent]]. To make matters worse, I'd volunteered to help organise a charity event for our student society, which I'd agreed to months earlier, [[before I'd realised]] how everything would overlap.\n\nTo manage it all, I had to become much more organised than I naturally am. The first thing I did was sit down and [[map out]] every deadline on a calendar, then break each assignment into smaller tasks with mini-deadlines. I also [[had an honest conversation]] with my manager at the café, and she kindly let me [[cut back]] to weekends only for that month. For the charity event, I [[delegated]] some of my responsibilities to a couple of first-year students who were [[keen to get involved]].\n\nAs for how I felt, I'd say it was [[a rollercoaster]]. In the first week I felt completely [[overwhelmed]] and wasn't sleeping well. But once I had a clear plan, the stress became more manageable, and there was something quite satisfying about [[ticking things off]]. By the end, I felt exhausted but genuinely proud. The biggest lesson I learned was that [[asking for help]] isn't a weakness. If I hadn't spoken to my manager, I don't think I would have [[made it through]]. These days I'm much more careful about [[taking on too much]] at once.",
+  follow:[["Why do people seem busier today than in the past?","I think technology has [[blurred the line]] between work and free time. People answer emails late at night, and there's constant pressure to be productive, which means we rarely [[switch off]]."],
+   ["Is it good for children to have very busy schedules?","[[Up to a point]]. Activities teach discipline and new skills, but children also need free time to play and even get bored, because that's when [[creativity]] develops. Too many classes can lead to [[burnout]]."]],
+  tip:"Problem → action → result is a strong structure for “a time when” cards, and it naturally leads to a conditional in your conclusion (“If I hadn’t…”)."},
+ {id:"goal", cat:"A plan", title:"A goal you want to achieve", prompt:"Describe a goal you would like to achieve in the future.",
+  bullets:["what the goal is","when you set this goal","what you are doing to achieve it"], explain:"and explain why this goal is important to you.",
+  notes:["full marathon before 30","18 months ago: desk job, no exercise","colleague’s story → running group","3 km → 4 runs/week, half marathon < 2 hrs","diet overhaul","health, discipline, prove I can"],
+  answer:"One goal I've set myself is to run a full marathon before I turn thirty.\n\nI set this goal about eighteen months ago. At the time I was [[going through a rough patch]]. I'd just started a desk job, I was [[barely exercising]], and I'd [[put on]] quite a bit of weight. A colleague who'd just completed a marathon told me about her experience, and something about it [[clicked]]. I went home that evening and signed up for a beginners' running group.\n\nSo far, I've been building up gradually. I started with just three kilometres, and I could barely manage that without stopping. Now I run four times a week, including one long run at weekends, and last month I completed my first half marathon in just under two hours, which I was [[over the moon]] about. I've also had to [[overhaul]] my diet, cutting down on fried food and paying much more attention to what I eat before long runs. Next year, [[provided I stay injury-free]], I'm planning to enter a full marathon in my city.\n\nThe goal is important to me for a few reasons. On a practical level, it's improved my health enormously. I sleep better and have much more energy. But it's also become about more than fitness. Running has taught me [[self-discipline]], because there are plenty of mornings when I'd much rather stay in bed. And I think completing something that once seemed [[completely out of reach]] would prove to myself that I can [[achieve far more than I give myself credit for]]. That mindset is something I'd like to [[carry over]] into my career as well.",
+  follow:[["Is it important to set goals when you are young?","I think so, as long as they're [[flexible]]. Goals give young people direction and motivation, but interests change a lot in your twenties, so it's important not to feel like a failure if your plans [[shift]]."],
+   ["Why do people often give up on their goals?","Often because they set goals that are [[unrealistic]] or too vague. When progress is slow, it's easy to [[lose heart]]. Breaking a big goal into smaller milestones usually helps people [[stay on track]]."]],
+  tip:"Future cards let you show range: the present perfect for progress so far, future forms for plans and conditionals for hopes."},
+ {id:"festival", cat:"An event", title:"A celebration you enjoy", prompt:"Describe a celebration or festival that is important in your family.",
+  bullets:["what the celebration is","when it takes place","what people do during it"], explain:"and explain how you feel about this celebration.",
+  notes:["Lunar New Year","late Jan/Feb, 3 days, prep weeks before","cleaning = sweep away bad luck, red","NYE dinner at grandparents’: fish, dumplings","visiting relatives, red envelopes","warmth, nostalgia; child vs now; commercialised"],
+  answer:"The celebration I'd like to describe is Lunar New Year, which is the most important festival in my family's calendar.\n\nIt usually falls in late January or February, depending on the lunar calendar, and the main celebrations last about three days, although the preparations start weeks in advance.\n\nIn the days leading up to it, people [[give their homes a thorough clean]], which symbolises sweeping away bad luck from the previous year. Houses are decorated in red, because it's considered a lucky colour. On New Year's Eve, the whole extended family [[gathers]] at my grandparents' house for a huge dinner. There's usually fish, which represents abundance, and dumplings, which are supposed to look like old gold coins. Then over the following days, we visit relatives, and married couples give red envelopes containing money to children and younger unmarried relatives, which, I have to admit, was my favourite part [[as a kid]].\n\nAs for how I feel about it, it's mostly [[a sense of warmth and nostalgia]]. Everyone in my family is so busy now that it's genuinely the only time of year when all of us are [[under one roof]]. That said, my feelings have [[evolved]] as I've got older. As a child, it was all about the money and the fireworks, whereas now I [[appreciate]] the quieter moments, like listening to my grandmother [[reminisce about]] celebrations when she was young. I do sometimes feel it's become a bit [[commercialised]], with shops pushing expensive gifts, but at its heart it's still about [[family ties]], and I hope that's something we [[hold on to]].",
+  follow:[["Are traditional festivals losing their importance?","In some ways, yes, especially in cities where people are busier and families are [[spread out]]. But many festivals are [[adapting]] rather than disappearing. People video-call relatives, for example, so the spirit survives."],
+   ["Why do people spend so much money on celebrations?","Partly because of [[social pressure]], since people want to impress relatives and friends. Social media makes it worse, because celebrations are now [[on display]]. I think meaningful celebrations don't need to be expensive, though."]],
+  tip:"Compare past and present (“As a child… whereas now…”). It extends your answer and shows you can handle contrast smoothly."}
+];
+
+/* ---------- basics ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt = s => s.replace(/'/g,"’").replace(/\[\[(.+?)\]\]/g,"<mark>$1</mark>");
+const plain = s => s.replace(/'/g,"’").replace(/\[\[(.+?)\]\]/g,"$1");
+const paras = s => s.split(/\n\n/).map(p => `<p>${fmt(p)}</p>`).join("");
+const KEY = "ielts-p2-book-v1";
+let store = {done:{}, notes:{}, drafts:{}, grades:{}, mocks:[]};
+try { const raw = localStorage.getItem(KEY); if (raw) store = Object.assign(store, JSON.parse(raw)); } catch(e) {}
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(store)); } catch(e) {} }
+const cardText = c => `${c.prompt} You should say: ${c.bullets.join(", ")}, ${c.explain}`;
+const cueHTML = c => `<div class="cue"><p class="cue-p">${c.prompt}</p><p class="cue-s">You should say:</p><ul>${c.bullets.map(b => `<li>${b}</li>`).join("")}</ul><p class="cue-e">${c.explain}</p></div>`;
+
+/* speak, then run cb once the examiner has finished */
+function sayThen(text, cb, enabled = true){
+  let done = false; const go = () => { if (!done){ done = true; cb && cb(); } };
+  if (!enabled || !("speechSynthesis" in window)) return go();
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-GB"; u.rate = 0.95;
+    const v = speechSynthesis.getVoices().find(v => /en-GB/i.test(v.lang)); if (v) u.voice = v;
+    u.onend = () => setTimeout(go, 250); u.onerror = go;
+    speechSynthesis.speak(u);
+    setTimeout(go, text.length * 75 + 2000);
+  } catch(e){ go(); }
+}
+
+/* ---------- timers ---------- */
+function makeTalkTimer(timeEl, fillEl, hintEl, zoneEl){
+  let t0 = 0, h = null, sec = 0, cfg = null;
+  const TALK = {max:120, scale:120, zone:[90,120], hint: s =>
+    s < 45 ? ["Keep going. Move on to the next bullet point.","var(--muted)"] :
+    s < 60 ? ["Under a minute so far. Keep developing your ideas.","var(--warn)"] :
+    s < 90 ? ["Good. Now explain why, with reasons.","var(--muted)"] :
+    s < 115 ? ["Excellent length. Start your conclusion.","var(--good)"] : ["Time’s nearly up.","var(--good)"]};
+  const FOLLOW = {max:0, scale:40, zone:[10,30], hint: s =>
+    s < 8 ? ["A short answer is fine here, but give a reason.","var(--muted)"] :
+    s <= 30 ? ["Good length for a follow-up answer.","var(--good)"] : ["That’s plenty. Wrap up.","var(--warn)"]};
+  function draw(){
+    sec = Math.floor((Date.now() - t0) / 1000);
+    if (cfg.max && sec >= cfg.max) sec = cfg.max;
+    timeEl.textContent = Math.floor(sec/60) + ":" + String(sec%60).padStart(2,"0");
+    fillEl.style.width = Math.min(100, sec / cfg.scale * 100) + "%";
+    const [txt, col] = cfg.hint(sec); hintEl.textContent = txt; hintEl.style.color = col;
+    if (cfg.max && sec >= cfg.max){ const cb = cfg.onMax; api.stop(); hintEl.textContent = "Time’s up. The examiner would stop you here."; cb && cb(); }
+  }
+  const api = {
+    start(kind, onMax){
+      api.stop(); cfg = Object.assign({}, kind === "follow" ? FOLLOW : TALK, {onMax});
+      zoneEl.style.left = (cfg.zone[0]/cfg.scale*100) + "%"; zoneEl.style.width = ((cfg.zone[1]-cfg.zone[0])/cfg.scale*100) + "%";
+      t0 = Date.now(); draw(); h = setInterval(draw, 250);
+    },
+    stop(){ if (h) clearInterval(h); h = null; return sec; },
+    reset(){ api.stop(); sec = 0; timeEl.textContent = "0:00"; fillEl.style.width = "0"; hintEl.textContent = ""; },
+    get running(){ return !!h; }
+  };
+  return api;
+}
+function makeCountdown(timeEl, fillEl){
+  let h = null;
+  return {
+    start(secs, onDone){
+      this.stop(); const end = Date.now() + secs * 1000;
+      const draw = () => {
+        const left = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+        timeEl.textContent = Math.floor(left/60) + ":" + String(left%60).padStart(2,"0");
+        fillEl.style.width = (left / secs * 100) + "%";
+        if (left <= 0){ this.stop(); onDone && onDone(); }
+      };
+      draw(); h = setInterval(draw, 250);
+    },
+    stop(){ if (h) clearInterval(h); h = null; },
+    get running(){ return !!h; }
+  };
+}
+
+
+/* recorder */
+function makeRecorder(){
+  let rec=null, stream=null, chunks=[];
+  return {
+    get live(){ return !!rec && rec.state === "recording"; },
+    async start(){
+      if (!navigator.mediaDevices || !window.MediaRecorder) throw new Error("unsupported");
+      stream = await navigator.mediaDevices.getUserMedia({audio:true});
+      chunks = []; rec = new MediaRecorder(stream);
+      rec.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
+      rec.start();
+    },
+    stop(){
+      return new Promise(res => {
+        if (!rec) return res(null);
+        rec.onstop = () => {
+          stream.getTracks().forEach(t => t.stop());
+          const url = chunks.length ? URL.createObjectURL(new Blob(chunks, {type: rec.mimeType || "audio/webm"})) : null;
+          rec = null; res(url);
+        };
+        rec.stop();
+      });
+    }
+  };
+}
+const REC_FAIL = "Recording isn’t available here (the microphone was blocked or isn’t supported). You can use your phone’s voice recorder instead.";
+
+
+/* ---------- band descriptors (from the official IELTS Speaking descriptors) ---------- */
+const CRIT = [
+ {k:"fc", name:"Fluency and coherence"},
+ {k:"lr", name:"Lexical resource"},
+ {k:"gra", name:"Grammatical range and accuracy"},
+ {k:"pron", name:"Pronunciation"}
+];
+const DESC = {
+ fc:{9:"Fluent with only very occasional repetition or self-correction. Any hesitation that occurs is used only to prepare the content of the next utterance and not to find words or grammar. Speech is situationally appropriate and cohesive features are fully acceptable. Topic development is fully coherent and appropriately extended.",
+  8:"Fluent with only very occasional repetition or self-correction. Hesitation may occasionally be used to find words or grammar, but most will be content related. Topic development is coherent, appropriate and relevant.",
+  7:"Able to keep going and readily produce long turns without noticeable effort. Some hesitation, repetition and/or self-correction may occur, often mid-sentence and indicate problems with accessing appropriate language. However, these will not affect coherence. Flexible use of spoken discourse markers, connectives and cohesive features.",
+  6:"Able to keep going and demonstrates a willingness to produce long turns. Coherence may be lost at times as a result of hesitation, repetition and/or self-correction. Uses a range of spoken discourse markers, connectives and cohesive features though not always appropriately.",
+  5:"Usually able to keep going, but relies on repetition and self-correction to do so and/or on slow speech. Hesitations are often associated with mid-sentence searches for fairly basic lexis and grammar. Overuse of certain discourse markers, connectives and other cohesive features. More complex speech usually causes disfluency but simpler language may be produced fluently.",
+  4:"Unable to keep going without noticeable pauses. Speech may be slow with frequent repetition. Often self-corrects. Can link simple sentences but often with repetitious use of connectives. Some breakdowns in coherence.",
+  3:"Frequent, sometimes long, pauses occur while candidate searches for words. Limited ability to link simple sentences and go beyond simple responses to questions. Frequently unable to convey basic message.",
+  2:"Lengthy pauses before nearly every word. Isolated words may be recognisable but speech is of virtually no communicative significance.",
+  1:"Essentially none. Speech is totally incoherent."},
+ lr:{9:"Total flexibility and precise use in all contexts. Sustained use of accurate and idiomatic language.",
+  8:"Wide resource, readily and flexibly used to discuss all topics and convey precise meaning. Skilful use of less common and idiomatic items despite occasional inaccuracies in word choice and collocation. Effective use of paraphrase as required.",
+  7:"Resource flexibly used to discuss a variety of topics. Some ability to use less common and idiomatic items and an awareness of style and collocation is evident though inappropriacies occur. Effective use of paraphrase as required.",
+  6:"Resource sufficient to discuss topics at length. Vocabulary use may be inappropriate but meaning is clear. Generally able to paraphrase successfully.",
+  5:"Resource sufficient to discuss familiar and unfamiliar topics but there is limited flexibility. Attempts paraphrase but not always with success.",
+  4:"Resource sufficient for familiar topics but only basic meaning can be conveyed on unfamiliar topics. Frequent inappropriacies and errors in word choice. Rarely attempts paraphrase.",
+  3:"Resource limited to simple vocabulary used primarily to convey personal information. Vocabulary inadequate for unfamiliar topics.",
+  2:"Very limited resource. Utterances consist of isolated words or memorised utterances. Little communication possible without the support of mime or gesture.",
+  1:"No resource bar a few isolated words. No communication possible."},
+ gra:{9:"Structures are precise and accurate at all times, apart from ‘mistakes’ characteristic of native speaker speech.",
+  8:"Wide range of structures, flexibly used. The majority of sentences are error free. Occasional inappropriacies and non-systematic errors occur. A few basic errors may persist.",
+  7:"A range of structures flexibly used. Error-free sentences are frequent. Both simple and complex sentences are used effectively despite some errors. A few basic errors persist.",
+  6:"Produces a mix of short and complex sentence forms and a variety of structures with limited flexibility. Though errors frequently occur in complex structures, these rarely impede communication.",
+  5:"Basic sentence forms are fairly well controlled for accuracy. Complex structures are attempted but these are limited in range, nearly always contain errors and may lead to the need for reformulation.",
+  4:"Can produce basic sentence forms and some short utterances are error-free. Subordinate clauses are rare and, overall, turns are short, structures are repetitive and errors are frequent.",
+  3:"Basic sentence forms are attempted but grammatical errors are numerous except in apparently memorised utterances.",
+  2:"No evidence of basic sentence forms.",
+  1:"No rateable language unless memorised."},
+ pron:{9:"Uses a full range of phonological features to convey precise and/or subtle meaning. Flexible use of features of connected speech is sustained throughout. Can be effortlessly understood throughout. Accent has no effect on intelligibility.",
+  8:"Uses a wide range of phonological features to convey precise and/or subtle meaning. Can sustain appropriate rhythm. Flexible use of stress and intonation across long utterances, despite occasional lapses. Can be easily understood throughout. Accent has minimal effect on intelligibility.",
+  7:"Displays all the positive features of band 6, and some, but not all, of the positive features of band 8.",
+  6:"Uses a range of phonological features, but control is variable. Chunking is generally appropriate, but rhythm may be affected by a lack of stress-timing and/or a rapid speech rate. Some effective use of intonation and stress, but this is not sustained. Individual words or phonemes may be mispronounced but this causes only occasional lack of clarity. Can generally be understood throughout without much effort.",
+  5:"Displays all the positive features of band 4, and some, but not all, of the positive features of band 6.",
+  4:"Uses some acceptable phonological features, but the range is limited. Produces some acceptable chunking, but there are frequent lapses in overall rhythm. Attempts to use intonation and stress, but control is limited. Individual words or phonemes are frequently mispronounced, causing lack of clarity. Understanding requires some effort and there may be patches of speech that cannot be understood.",
+  3:"Displays some features of band 2, and some, but not all, of the positive features of band 4.",
+  2:"Uses few acceptable phonological features (possibly because sample is insufficient). Overall problems with delivery impair attempts at connected speech. Individual words and phonemes are mainly mispronounced and little meaning is conveyed. Often unintelligible.",
+  1:"Can produce occasional individual words and phonemes that are recognisable, but no overall meaning is conveyed. Unintelligible."}
+};
+function renderDescTable(){
+  const head = `<thead><tr><th>Band</th>${CRIT.map(c => `<th>${c.name}</th>`).join("")}</tr></thead>`;
+  const rows = bands => bands.map(b => `<tr><td>${b}</td>${CRIT.map(c => `<td>${DESC[c.k][b]}</td>`).join("")}</tr>`).join("");
+  $("descTable").innerHTML = head + "<tbody>" + rows([9,8,7,6,5,4]) + "</tbody>";
+  $("descTableLow").innerHTML = head + "<tbody>" + rows([3,2,1]) + `<tr><td>0</td><td colspan="4">Does not attend / does not complete the test.</td></tr></tbody>`;
+}
+renderDescTable();
+
+/* ---------- speech recognition (transcription) ---------- */
+function makeASR(){
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) return null;
+  let r = null, on = false, finals = [], interim = "", confs = [], pauses = 0, last = 0, doneIdx = 0, seen = 0, endResolve = null;
+  const api = {onLive:null, onFail:null, error:null};
+  function create(){
+    r = new SR(); r.lang = "en-GB"; r.continuous = true; r.interimResults = true; r.maxAlternatives = 1;
+    doneIdx = 0; seen = 0;
+    r.onresult = e => {
+      const now = Date.now();
+      if (last && now - last > 2500) pauses++;
+      last = now; interim = ""; seen = e.results.length;
+      for (let i = e.resultIndex; i < e.results.length; i++){
+        const res = e.results[i];
+        if (res.isFinal){ if (i >= doneIdx){ finals.push(res[0].transcript.trim()); if (res[0].confidence > 0) confs.push(res[0].confidence); doneIdx = i + 1; } }
+        else if (i >= doneIdx) interim += res[0].transcript;
+      }
+      api.onLive && api.onLive((finals.join(" ") + " " + interim).trim());
+    };
+    r.onerror = e => {
+      if (e.error === "not-allowed" || e.error === "service-not-allowed" || e.error === "audio-capture"){
+        on = false; api.error = e.error; api.onFail && api.onFail(e.error);
+      }
+    };
+    r.onend = () => {
+      if (on){ try { create(); r.start(); } catch(x){} }
+      else if (endResolve){ endResolve(); endResolve = null; }
+    };
+  }
+  api.start = () => { on = true; api.error = null; finals = []; interim = ""; confs = []; pauses = 0; last = 0; create(); try { r.start(); } catch(e){ on = false; api.error = "start"; return false; } return true; };
+  api.take = () => {
+    const out = {text:[...finals, interim].join(" ").replace(/\s+/g," ").trim(), conf:confs.slice(), pauses};
+    finals = []; interim = ""; confs = []; pauses = 0; last = 0; doneIdx = seen;
+    return out;
+  };
+  api.stop = () => new Promise(res => {
+    if (!on || !r){ on = false; return res(); }
+    on = false; endResolve = res;
+    try { r.stop(); } catch(e){ res(); }
+    setTimeout(() => { if (endResolve){ endResolve = null; res(); } }, 1500);
+  });
+  api.abort = () => { on = false; try { r && r.abort(); } catch(e){} };
+  return api;
+}
+const ASR_MISSING = "This browser can’t transcribe speech (try Chrome or Edge). Type what you said, then grade it.";
+const ASR_BLOCKED = "The microphone is blocked here, so your speech can’t be transcribed. Type what you said, then grade it.";
+
+/* ---------- grading ---------- */
+let samplerP = null;
+function getSampler(){
+  if (!samplerP) samplerP = (async () => { try { return window.claude ? await window.claude.use("sample") : null; } catch(e){ return null; } })();
+  return samplerP;
+}
+getSampler();
+
+function overallBand(bands){
+  const v = bands.filter(b => typeof b === "number");
+  if (!v.length) return null;
+  const avg = v.reduce((a,b) => a+b, 0) / v.length;
+  const f = Math.floor(avg), fr = avg - f;
+  return fr < 0.25 ? f : fr < 0.75 ? f + 0.5 : f + 1;
+}
+function descText(){
+  return CRIT.map(c => `${c.name.toUpperCase()}\n` + [9,8,7,6,5,4,3,2,1].map(b => `Band ${b}: ${DESC[c.k][b]}`).join("\n")).join("\n\n");
+}
+
+/* ---------- hero ---------- */
+let heroIdx = 0;
+function renderHero(){ $("heroCard").innerHTML = cueHTML(CARDS[heroIdx]); }
+$("heroNext").onclick = () => { heroIdx = (heroIdx + 1) % CARDS.length; renderHero(); };
+renderHero();
+
+/* ---------- book ---------- */
+function renderBook(){
+  $("toc").innerHTML = CARDS.map(c => `<li><a href="#book" data-card="${c.id}">${c.title}<span class="count">${store.grades[c.id] != null ? store.grades[c.id].toFixed(1) : store.done[c.id] ? "✓" : ""}</span></a></li>`).join("");
+  $("bookBody").innerHTML = CARDS.map(c => `
+    <article class="topic" id="c-${c.id}">
+      <header><h3>${c.title}</h3><span class="chapter">${c.cat}</span></header>
+      <div style="margin:1rem 0">${cueHTML(c)}</div>
+      <div class="row">
+        <button class="btn small reveal" type="button" data-reveal="n-${c.id}" data-label="model notes">Show model notes</button>
+        <button class="btn small reveal" type="button" data-reveal="a-${c.id}" data-label="model answer">Show model answer</button>
+        <button class="btn small" type="button" data-say="${c.id}">Hear the card</button>
+        <button class="btn small" type="button" data-practise="${c.id}">Practise this</button>
+        ${store.done[c.id] ? '<span class="done-badge">Practised</span>' : ""}
+      </div>
+      <div class="a" id="n-${c.id}"><div class="notepad" style="max-width:420px"><p class="np-title">Notes made in one minute</p><ul>${c.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div></div>
+      <div class="a answer" id="a-${c.id}">${paras(c.answer)}<p class="meta">About ${c.answer.split(/\s+/).length} words, roughly 2 minutes at a natural pace.</p></div>
+      <h4 style="margin:1.2rem 0 .2rem">Follow-up questions</h4>
+      ${c.follow.map((f,j) => `<div class="followq"><p class="q">${esc(plain(f[0]))}</p>
+        <button class="btn small reveal" type="button" data-reveal="f-${c.id}-${j}" data-label="model answer">Show model answer</button>
+        <p class="a" id="f-${c.id}-${j}">${fmt(f[1])}</p></div>`).join("")}
+      <div class="tip"><b>Band booster:</b> ${c.tip}</div>
+    </article>`).join("");
+}
+$("bookBody").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  if (b.dataset.reveal){
+    const a = $(b.dataset.reveal); a.classList.toggle("open");
+    b.textContent = (a.classList.contains("open") ? "Hide " : "Show ") + b.dataset.label;
+  } else if (b.dataset.say){
+    sayThen(cardText(CARDS.find(c => c.id === b.dataset.say)));
+  } else if (b.dataset.practise){
+    pickCard(b.dataset.practise); location.hash = "practice";
+  }
+});
+$("toc").addEventListener("click", e => {
+  const a = e.target.closest("a[data-card]"); if (!a) return;
+  e.preventDefault();
+  $("c-" + a.dataset.card).scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
+});
+$("showAll").onchange = e => document.body.classList.toggle("show-all", e.target.checked);
+$("showHl").onchange = e => document.body.classList.toggle("no-hl", !e.target.checked);
+
+/* ---------- grading ---------- */
+const LINKERS = ["because","since","although","though","whereas","while","however","that said","having said that","on the whole","to be honest","actually","especially","particularly","for example","for instance","which","as well","rather than","firstly","secondly","finally","the main reason","as for","looking back","in fact","overall","not only","as a result","so","but","if","when","unless","provided"];
+const SIGNPOSTS = ["i'd like to talk about","i'm going to talk about","firstly","secondly","finally","the main reason","as for","looking back","that said","the reason","in fact","to sum up","overall"];
+const BAND_PHRASES = Array.from(new Set(CARDS.flatMap(c => (c.answer.match(/\[\[(.+?)\]\]/g) || []).map(m => m.slice(2,-2).toLowerCase()))));
+const findIn = (list, txt) => { const low = " " + txt.toLowerCase().replace(/[’]/g,"'") + " "; return list.filter(l => new RegExp("\\b" + l.replace(/ /g,"\\s+").replace(/'/g,"'") + "\\b").test(low)); };
+const avgConf = a => a && a.length ? +(a.reduce((x,y) => x+y, 0) / a.length).toFixed(2) : null;
+
+function buildPrompt(card, talk, follows, spoken){
+  const data = {
+    cueCard:{task:card.prompt, youShouldSay:card.bullets, alsoAsked:card.explain},
+    candidateNotes: talk.notes || null,
+    longTurn:{response: talk.text || "(no answer)", seconds: talk.seconds || null, longPausesOver2_5s: spoken ? (talk.pauses ?? null) : null, recognitionConfidence: spoken ? avgConf(talk.conf) : null},
+    followUpQuestions: follows.map((f,i) => ({n:i+1, question:f.q, response:f.text || "(no answer)", seconds:f.seconds || null}))
+  };
+  return `You are an experienced, strict but fair IELTS Speaking examiner. Grade this candidate's IELTS Speaking Part 2 performance (the long turn${follows.length ? " plus the short follow-up questions" : ""}) against the official band descriptors below.
+
+Rules:
+- Give each criterion a whole band from 1 to 9. A candidate must fully fit the positive features of a band to be awarded it; if they show only some features of a higher band, award the lower band.
+- ${spoken ? "Responses are automatic speech-recognition transcripts. The machine added any punctuation and capitals, so ignore them. Do not penalise obvious recognition errors (homophones, a dropped small word); judge what the speaker most likely said. Use seconds and long pauses as fluency evidence." : "Responses were typed by the candidate in place of speech. Judge them as spoken English, not as writing; do not reward or penalise punctuation or spelling."}
+- The long turn should last 1–2 minutes (roughly 130–280 words). Readily producing long turns without noticeable effort is a band 7 fluency feature, so a turn under about 60 seconds or 100 words gives limited evidence: fluency and coherence should not normally exceed band 6, and evidence for vocabulary and grammar range is limited too. If the turn reached 120 seconds, the examiner stopped the candidate; that is normal and not a penalty.
+- Candidates do not lose marks simply for missing a bullet point, but weak topic development, going off topic or sounding memorised affects fluency and coherence. Report coverage of each bullet point and the final "explain" point separately in "coverage".
+- Follow-up answers are short by design; use them only as extra evidence.
+- ${spoken ? "Pronunciation: you cannot hear the audio. Estimate it cautiously from recognition confidence and how cleanly the speech was recognised (garbled or nonsense words suggest unclear pronunciation). Do not award above band 7 on this evidence, and say it is an estimate." : "Pronunciation cannot be judged without audio, so set \"pron\" to null."}
+- In "why", link the candidate's language to the wording of the descriptor. In "evidence", quote a short phrase the candidate actually said.
+- Be specific, honest and encouraging. Write for an English learner: clear, simple sentences.
+
+BAND DESCRIPTORS
+${descText()}
+
+CANDIDATE PERFORMANCE (JSON)
+${JSON.stringify(data, null, 1)}
+
+Reply with only a JSON object, no other text, in exactly this shape:
+{"fc":{"band":6,"why":"","evidence":""},"lr":{"band":6,"why":"","evidence":""},"gra":{"band":6,"why":"","evidence":""},"pron":${spoken ? '{"band":6,"why":"","evidence":""}' : "null"},"coverage":[{"point":"bullet point text","covered":"yes|partly|no","note":"a few words"}],"strengths":["up to 3 items"],"improve":["up to 3 specific, actionable tips"],"corrections":[{"said":"exact words with an error","better":"corrected version"}],"upgrades":[{"original":"a sentence the candidate said","upgraded":"the same idea at Band 8, with new or upgraded phrases wrapped in [[double square brackets]]"}],"perQuestion":${follows.length ? '[{"n":1,"note":"one short sentence on this follow-up answer"}]' : "[]"}}
+Include all ${card.bullets.length + 1} points in "coverage" (the bullet points and the "explain" point). Give at most 4 corrections (only real errors) and 2–3 upgrades.`;
+}
+function heuristicGrade(talk, follows, spoken){
+  const txt = talk.text || "";
+  const words = txt.split(/\s+/).filter(Boolean);
+  const w = words.length;
+  const link = findIn(LINKERS, txt).length;
+  const sign = findIn(SIGNPOSTS, txt).length;
+  const low = " " + txt.toLowerCase().replace(/[’]/g,"'") + " ";
+  const complex = (low.match(/\b(which|who|whereas|although|though|unless|if|since|would|could|have been|has been|had|used to|rather than)\b/g) || []).length;
+  const uniq = new Set(words.map(x => x.toLowerCase().replace(/[^a-z']/g,""))).size / Math.max(1, w);
+  const longW = words.filter(x => x.replace(/[^a-z]/gi,"").length >= 8).length / Math.max(1, w);
+  const idioms = BAND_PHRASES.filter(p => low.includes(p.replace(/’/g,"'"))).length;
+  const clamp = b => Math.max(3, Math.min(8, Math.round(b)));
+  const short = w < 100 || (talk.seconds && talk.seconds < 60);
+  let fc = 4 + (w >= 100) + (w >= 170) + (link >= 4) + (sign >= 2) - (spoken && talk.pauses >= 5 ? 1 : 0);
+  let lr = 4 + (w >= 100) + (uniq > 0.5) + (longW > 0.09) + (idioms >= 2) + (idioms >= 5 ? 0.5 : 0);
+  let gra = 4 + (w >= 100) + (complex >= 4) + (complex >= 9) + (link >= 6 ? 0.5 : 0);
+  if (short){ fc = Math.min(fc, 6); lr = Math.min(lr, 6); gra = Math.min(gra, 6); }
+  const c = avgConf(talk.conf);
+  const pron = spoken && c != null ? clamp(4 + (c > 0.6) + (c > 0.75) + (c > 0.88)) : null;
+  const tips = [];
+  if (w < 170) tip(tips, "Talk for longer. Add a small story or a specific detail to each bullet point, and keep going until 2 minutes.");
+  if (sign < 2) tip(tips, "Signpost your talk: “The main reason…”, “As for how I felt…”, “Looking back…”.");
+  if (complex < 5) tip(tips, "Use more complex sentences, such as relative clauses (which…), conditionals and the past perfect.");
+  if (idioms < 2) tip(tips, "Borrow a few highlighted phrases from the model answers and use them in your own story.");
+  return {rough:true,
+    fc:{band:clamp(fc), why:"Rough rule-based estimate from length, linking words and signposting.", evidence:""},
+    lr:{band:clamp(lr), why:"Rough estimate from vocabulary variety, longer words and idiomatic phrases.", evidence:""},
+    gra:{band:clamp(gra), why:"Rough estimate from the number of complex structures. Accuracy can’t be checked offline.", evidence:""},
+    pron: pron == null ? null : {band:pron, why:"Rough estimate from how confidently your speech was recognised.", evidence:""},
+    coverage:[], strengths:[], improve:tips.slice(0,3), corrections:[], upgrades:[], perQuestion:[]};
+}
+function tip(a, t){ a.push(t); }
+async function grade(card, talk, follows, spoken){
+  const sample = await getSampler();
+  if (!sample) return heuristicGrade(talk, follows, spoken);
+  try {
+    const r = await sample.json(buildPrompt(card, talk, follows, spoken), {modelTier:"default"});
+    if (!r || !r.fc || !r.lr || !r.gra) throw {code:"invalid_json"};
+    if (!spoken) r.pron = null;
+    return r;
+  } catch(e){
+    const out = heuristicGrade(talk, follows, spoken);
+    out.fallbackReason = e && e.code === "not_granted" ? "You didn’t allow this page to use Claude, so this is a rough offline estimate instead."
+      : e && e.code === "rate_limited" ? "Claude is busy or your usage limit was reached, so this is a rough offline estimate. Try again in a few minutes."
+      : "The detailed grader couldn’t be reached, so this is a rough offline estimate.";
+    return out;
+  }
+}
+const safe = s => fmt(esc(String(s ?? "")));
+function renderReport(el, r, spoken){
+  const bands = CRIT.map(c => r[c.k] && typeof r[c.k].band === "number" ? Math.max(1, Math.min(9, Math.round(r[c.k].band))) : null);
+  const overall = overallBand(bands);
+  const critHTML = CRIT.map((c,i) => {
+    const b = bands[i], x = r[c.k];
+    if (b == null) return `<div class="crit"><div class="band">–</div><div><h4>${c.name}</h4><p>Not assessed: typed answers have no audio. Speak your talk to get a pronunciation estimate.</p></div></div>`;
+    return `<div class="crit"><div class="band">${b}</div><div><h4>${c.name}${c.k === "pron" ? " (estimate)" : ""}</h4>
+      <p>${safe(x.why)}</p>${x.evidence ? `<p class="ev">“${esc(plain(String(x.evidence)))}”</p>` : ""}
+      <details><summary>What band ${b} means</summary><p>${DESC[c.k][b]}</p>${b < 9 ? `<p><b>To reach band ${b+1}:</b> ${DESC[c.k][b+1]}</p>` : ""}</details></div></div>`;
+  }).join("");
+  const h = t => `<h4 style="margin:1.1rem 0 .3rem">${t}</h4>`;
+  const list = (t, a) => a && a.length ? h(t) + `<ul>${a.map(s => `<li>${safe(s)}</li>`).join("")}</ul>` : "";
+  const cov = r.coverage && r.coverage.length ? h("Did you cover the card?") + r.coverage.map(c => {
+    const k = String(c.covered || "").toLowerCase(); const cls = k.startsWith("y") ? "yes" : k.startsWith("p") ? "partly" : "no";
+    return `<div class="cov"><span class="mk ${cls}">${cls === "yes" ? "Covered" : cls === "partly" ? "Partly" : "Missing"}</span><span><b>${esc(plain(String(c.point||"")))}</b>${c.note ? `. ${esc(plain(String(c.note)))}` : ""}</span></div>`;
+  }).join("") : "";
+  const fixes = r.corrections && r.corrections.length ? h("Corrections") + r.corrections.map(c => `<p class="fix"><s>${esc(plain(String(c.said||"")))}</s> → <b>${esc(plain(String(c.better||"")))}</b></p>`).join("") : "";
+  const ups = r.upgrades && r.upgrades.length ? h("Upgrade to Band 8") + r.upgrades.map(u => `<p class="fix" style="margin-bottom:.1rem;color:var(--muted)">${esc(plain(String(u.original||"")))}</p><p class="a open" style="margin:0 0 .8rem">→ ${safe(u.upgraded)}</p>`).join("") : "";
+  const perQ = r.perQuestion && r.perQuestion.length ? h("Follow-up questions") + `<ul>${r.perQuestion.map(p => `<li><b>Q${esc(String(p.n))}:</b> ${safe(p.note)}</li>`).join("")}</ul>` : "";
+  el.innerHTML = `<div class="report">
+    <div class="overall"><span class="big">${overall == null ? "–" : overall.toFixed(1)}</span><span class="lbl">estimated band${bands[3] == null ? " (from 3 criteria; pronunciation not assessed)" : ""}</span></div>
+    ${critHTML}${cov}${list("What you did well", r.strengths)}${list("How to improve", r.improve)}${fixes}${ups}${perQ}
+    <p class="caveat">${r.fallbackReason ? esc(r.fallbackReason) + " " : ""}${r.rough ? "Rule-based estimates are less reliable than examiner-style grading. " : ""}This grade is an estimate against the IELTS Speaking band descriptors, based on ${spoken ? "a speech-recognition transcript (the grader can’t hear your voice, so pronunciation is only estimated)" : "typed text"}. The real test scores all three parts together.</p>
+  </div>`;
+  return overall;
+}
+function showGrading(el){ el.innerHTML = `<div class="grading"><span class="spin"></span>Grading against the band descriptors… this usually takes 15–60 seconds.</div>`; }
+
+/* ---------- mock test ---------- */
+let M = null;
+const mockTimer = makeTalkTimer($("mockTime"), $("mockFill"), $("mockHint"), document.querySelector("#mockTalk .zone"));
+const mockCount = makeCountdown($("mockPrepTime"), $("mockPrepFill"));
+const mockRec = makeRecorder();
+const mockASR = makeASR();
+
+$("mockStart").onclick = async () => {
+  const card = CARDS[Math.floor(Math.random() * CARDS.length)];
+  const nF = Math.random() < 0.5 ? 1 : 2;
+  M = {card, stage:"prep", fi:-1, speak:$("optSpeak").checked, tr:$("optTr").checked, rec:$("optRec").checked, spoken:false, audio:null,
+       talk:{text:"", seconds:0, pauses:0, conf:[], notes:""}, follows:card.follow.slice(0,nF).map(f => ({q:plain(f[0]), a:f[1], text:"", seconds:0}))};
+  $("mockSetup").hidden = true; $("mockReview").hidden = true; $("mockRun").hidden = false;
+  $("mockLive").textContent = ""; $("mockNotes").value = ""; $("mockTalk").hidden = true; $("mockPrep").hidden = false;
+  $("mockCard").innerHTML = cueHTML(card); $("mockCard").hidden = false;
+  $("mockStage").textContent = "Preparation: 1 minute";
+  $("mockNext").textContent = "Start speaking now"; $("mockNext").disabled = false;
+  const notes = [];
+  if (M.tr){
+    if (!mockASR){ M.tr = false; notes.push(ASR_MISSING); }
+    else {
+      mockASR.onLive = t => { $("mockLive").textContent = M.stage !== "prep" && t ? "Hearing: " + t.slice(-180) : ""; };
+      mockASR.onFail = () => { M.tr = false; $("mockStatus").textContent = ASR_BLOCKED; $("mockLive").textContent = ""; };
+      if (mockASR.start()) M.spoken = true; else { M.tr = false; notes.push(ASR_BLOCKED); }
+    }
+  }
+  if (M.rec){ try { await mockRec.start(); notes.push("Recording audio."); } catch(e){ M.rec = false; notes.push(REC_FAIL); } }
+  if (M.tr) notes.unshift("Transcribing your talk.");
+  $("mockStatus").textContent = notes.join(" ");
+  const intro = "Now I’m going to give you a topic, and I’d like you to talk about it for one to two minutes. Before you talk, you’ll have one minute to think about what you’re going to say. You can make some notes if you wish.";
+  $("mockSay").textContent = intro;
+  sayThen(intro, () => { if (M && M.stage === "prep" && !mockCount.running) mockCount.start(60, startMockTalk); }, M.speak);
+  if (!M.speak) mockCount.start(60, startMockTalk);
+};
+function startMockTalk(){
+  if (!M || M.stage !== "prep") return;
+  mockCount.stop(); M.stage = "talk-wait";
+  M.talk.notes = $("mockNotes").value.trim();
+  $("mockPrep").hidden = true; $("mockTalk").hidden = false;
+  $("mockNotesPre").textContent = M.talk.notes || "(no notes)";
+  $("mockStage").textContent = "Long turn: 1–2 minutes";
+  const line = "All right? Remember, you have one to two minutes for this. I’ll tell you when the time is up. Can you start speaking now, please?";
+  $("mockSay").textContent = line; $("mockNext").textContent = "I’ve finished"; $("mockNext").disabled = true;
+  mockTimer.reset();
+  sayThen(line, () => {
+    if (!M) return; M.stage = "talk"; $("mockNext").disabled = false;
+    if (M.tr) mockASR.take();
+    mockTimer.start("talk", () => endMockTalk());
+  }, M.speak);
+}
+function capture(target){
+  target.seconds = mockTimer.stop();
+  if (M.tr){ const t = mockASR.take(); target.text = t.text; target.pauses = t.pauses; target.conf = t.conf; }
+}
+function endMockTalk(){
+  if (!M || M.stage !== "talk") return;
+  capture(M.talk); askFollow(0, "Thank you. ");
+}
+function askFollow(i, lead = ""){
+  if (i >= M.follows.length) return finishMock();
+  M.stage = "follow-wait"; M.fi = i;
+  const f = M.follows[i];
+  $("mockCard").hidden = true; $("mockNotesView").hidden = true;
+  $("mockStage").textContent = `Follow-up question ${i+1} of ${M.follows.length}`;
+  $("mockSay").textContent = lead + f.q; $("mockLive").textContent = "";
+  $("mockNext").textContent = i === M.follows.length - 1 ? "Finish test" : "Next question"; $("mockNext").disabled = true;
+  mockTimer.reset();
+  sayThen(lead + f.q, () => {
+    if (!M) return; M.stage = "follow"; $("mockNext").disabled = false;
+    if (M.tr) mockASR.take();
+    mockTimer.start("follow");
+  }, M.speak);
+}
+$("mockNext").onclick = () => {
+  if (!M) return;
+  if (M.stage === "prep") startMockTalk();
+  else if (M.stage === "talk") endMockTalk();
+  else if (M.stage === "follow"){ capture(M.follows[M.fi]); askFollow(M.fi + 1); }
+};
+$("mockEnd").onclick = () => {
+  if (!M) return;
+  mockCount.stop();
+  if (M.stage === "prep") M.talk.notes = $("mockNotes").value.trim();
+  if (M.stage === "talk") capture(M.talk);
+  else if (M.stage === "follow") capture(M.follows[M.fi]);
+  finishMock();
+};
+async function finishMock(){
+  M.stage = "done"; mockTimer.stop(); mockCount.stop();
+  try { speechSynthesis.cancel(); } catch(e) {}
+  if (M.tr) await mockASR.stop();
+  if (M.rec) M.audio = await mockRec.stop();
+  $("mockNotesView").hidden = false;
+  const s = M.talk.seconds;
+  $("mockSummary").textContent = !s ? "You ended the test before giving your talk." :
+    `Your talk lasted ${Math.floor(s/60)}:${String(s%60).padStart(2,"0")}. ` + (s >= 120 ? "You kept going until the examiner stopped you, which is ideal." : s >= 90 ? "That’s a strong length." : s >= 60 ? "That’s acceptable, but aim for at least 1:30." : "That’s under a minute, which makes high bands hard to reach. Add detail and keep going.");
+  $("mockAudio").innerHTML = M.audio ? `<p style="margin:.4rem 0 0"><b>Listen back to your test</b></p><audio controls src="${M.audio}"></audio>` : "";
+  $("mockReport").innerHTML = ""; $("mockGrade").textContent = "Grade my test";
+  const c = M.card;
+  $("mockItems").innerHTML = `
+    <div class="item">${cueHTML(c)}
+      ${M.talk.notes ? `<p class="meta" style="margin-top:.8rem">Your notes</p><pre class="notes-pre">${esc(M.talk.notes)}</pre>` : ""}
+      <label class="meta" for="mt-talk" style="display:block;margin-top:.8rem">Your talk${M.spoken ? " (transcript)" : ""}</label>
+      <textarea id="mt-talk" data-k="talk" placeholder="Type what you said.">${esc(M.talk.text || "")}</textarea>
+      <details style="margin-top:.5rem"><summary>Model notes and answer</summary><div class="notepad" style="max-width:420px;margin:.6rem 0"><ul>${c.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div><div class="a open answer">${paras(c.answer)}</div></details>
+    </div>
+    ${M.follows.map((f,i) => `<div class="item">
+      <p class="meta">Follow-up ${i+1}${f.seconds ? " · " + f.seconds + " seconds" : ""}</p>
+      <p class="q">${esc(f.q)}</p>
+      <textarea data-k="${i}" placeholder="Type what you said.">${esc(f.text || "")}</textarea>
+      <details style="margin-top:.5rem"><summary>Model answer</summary><p class="a open">${fmt(f.a)}</p></details>
+    </div>`).join("")}`;
+  $("mockItems").querySelectorAll("textarea").forEach(t => t.addEventListener("input", () => {
+    if (t.dataset.k === "talk") M.talk.text = t.value; else M.follows[+t.dataset.k].text = t.value;
+  }));
+  $("mockRun").hidden = true; $("mockReview").hidden = false;
+  window.scrollTo(0,0);
+}
+$("mockGrade").onclick = async () => {
+  if ((M.talk.text || "").trim().split(/\s+/).filter(Boolean).length < 20){
+    $("mockReport").innerHTML = `<p class="status" style="color:var(--warn)">Your talk needs at least 20 words to be graded. Check the transcript below, or type what you said.</p>`; return;
+  }
+  $("mockGrade").disabled = true; showGrading($("mockReport"));
+  const follows = M.follows.filter(f => (f.text || "").trim());
+  const r = await grade(M.card, M.talk, follows, M.spoken);
+  const o = renderReport($("mockReport"), r, M.spoken);
+  if (o != null){ store.mocks = (store.mocks || []).concat([{at:Date.now(), band:o, card:M.card.id}]).slice(-20); save(); renderProgress(); }
+  $("mockGrade").disabled = false; $("mockGrade").textContent = "Grade again";
+};
+$("mockAgain").onclick = () => { $("mockReview").hidden = true; $("mockSetup").hidden = false; };
+
+/* ---------- self-practice ---------- */
+let P = null, pStage = "idle";
+const pTimer = makeTalkTimer($("pTime"), $("pFill"), $("pHint"), document.querySelector("#pTalkBox .zone"));
+const pCount = makeCountdown($("pPrepTime"), $("pPrepFill"));
+const pRec = makeRecorder();
+const pASR = makeASR();
+$("pCard").innerHTML = CARDS.map(c => `<option value="${c.id}">${c.title}</option>`).join("");
+function pickCard(id){
+  if (pStage !== "idle") return;
+  if (!id){
+    const pool = CARDS.filter(c => !store.done[c.id] && (!P || c.id !== P.id));
+    const alt = CARDS.filter(c => !P || c.id !== P.id);
+    const list = pool.length ? pool : alt;
+    id = list[Math.floor(Math.random() * list.length)].id;
+  }
+  P = CARDS.find(c => c.id === id); P.metrics = null;
+  $("pCard").value = P.id;
+  $("pCardView").innerHTML = cueHTML(P);
+  $("pNotes").value = store.notes[P.id] || "";
+  $("pDraft").value = store.drafts[P.id] || "";
+  $("pModelText").innerHTML = `<div class="notepad" style="max-width:420px;margin-bottom:1rem"><p class="np-title">Model notes</p><ul>${P.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div><div class="answer">${paras(P.answer)}</div>`;
+  $("pModelText").classList.remove("open"); $("pModel").textContent = "Compare with model answer";
+  $("pFollow").innerHTML = P.follow.map((f,j) => `<div class="followq"><p class="q">${esc(plain(f[0]))}</p>
+    <div class="row"><button class="btn small" type="button" data-fsay="${j}">Hear it</button><button class="btn small" type="button" data-fshow="${j}">Show model answer</button></div>
+    <p class="a" id="pf-${j}">${fmt(f[1])}</p></div>`).join("");
+  $("pAudio").innerHTML = ""; $("pStatus").textContent = ""; $("pLive").textContent = ""; $("pReport").innerHTML = "";
+  $("pPrepBox").hidden = true; $("pTalkBox").hidden = true; pTimer.reset();
+  $("pPrep").textContent = "Start 1-minute preparation"; $("pSpeak").textContent = "Skip to speaking"; $("pSpeak").classList.remove("rec","live");
+  document.querySelectorAll("[data-c]").forEach(c => c.checked = false); score();
+  $("pDone").textContent = store.done[P.id] ? "Practised ✓" : "Mark as practised";
+  analyse();
+}
+$("pFollow").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  if (b.dataset.fsay != null) sayThen(plain(P.follow[+b.dataset.fsay][0]));
+  if (b.dataset.fshow != null){ const a = $("pf-" + b.dataset.fshow); a.classList.toggle("open"); b.textContent = a.classList.contains("open") ? "Hide model answer" : "Show model answer"; }
+});
+$("pNew").onclick = () => pickCard();
+$("pCard").onchange = () => pickCard($("pCard").value);
+$("pListen").onclick = () => sayThen(cardText(P));
+$("pNotes").addEventListener("input", () => { store.notes[P.id] = $("pNotes").value; save(); });
+$("pPrep").onclick = () => {
+  if (pStage === "prep"){ pCount.stop(); pStage = "idle"; $("pPrep").textContent = "Start 1-minute preparation"; $("pPrepBox").hidden = true; $("pStatus").textContent = ""; return; }
+  if (pStage !== "idle") return;
+  pStage = "prep"; $("pPrepBox").hidden = false; $("pTalkBox").hidden = true; $("pReport").innerHTML = "";
+  $("pPrep").textContent = "Cancel preparation"; $("pSpeak").textContent = "Start speaking now";
+  $("pStatus").textContent = "Make notes now. Speaking starts automatically when the minute is up.";
+  $("pNotes").focus();
+  pCount.start(60, () => startSpeak());
+};
+$("pSpeak").onclick = () => { if (pStage === "talk") stopSpeak(); else startSpeak(); };
+async function startSpeak(){
+  if (pStage === "talk") return;
+  pCount.stop(); pStage = "talk";
+  $("pPrepBox").hidden = true; $("pTalkBox").hidden = false; $("pReport").innerHTML = ""; $("pLive").textContent = "";
+  $("pPrep").textContent = "Start 1-minute preparation"; $("pPrep").disabled = true;
+  $("pSpeak").textContent = "Stop"; $("pSpeak").classList.add("rec","live");
+  const notes = []; let asrOn = false;
+  if (!pASR) notes.push(ASR_MISSING);
+  else {
+    pASR.onLive = t => { $("pLive").textContent = t.length > 220 ? "…" + t.slice(-220) : t; };
+    pASR.onFail = () => { $("pStatus").textContent = ASR_BLOCKED; };
+    asrOn = pASR.start(); if (!asrOn) notes.push(ASR_BLOCKED);
+  }
+  try { await pRec.start(); } catch(e){ if (!asrOn) notes.push("Audio recording isn’t available either."); }
+  P._asr = asrOn;
+  pTimer.start("talk", () => stopSpeak(true));
+  $("pStatus").textContent = notes.length ? notes.join(" ") : "Talk now. You’ll be stopped at 2 minutes.";
+}
+async function stopSpeak(auto){
+  if (pStage !== "talk") return;
+  pStage = "stopping";
+  const seconds = pTimer.stop();
+  $("pSpeak").textContent = "Speak again"; $("pSpeak").classList.remove("rec","live");
+  let t = {text:"", pauses:0, conf:[]};
+  if (P._asr && pASR){ await pASR.stop(); t = pASR.take(); }
+  const url = pRec.live ? await pRec.stop() : null;
+  $("pAudio").innerHTML = url ? `<audio controls src="${url}"></audio>` : "";
+  $("pLive").textContent = "";
+  const len = `${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,"0")}`;
+  if (t.text){
+    $("pDraft").value = t.text; store.drafts[P.id] = t.text; save();
+    P.metrics = {seconds, pauses:t.pauses, conf:t.conf, spoken:true};
+    $("pStatus").textContent = `${auto ? "Time’s up. " : ""}You spoke for ${len}. Check the transcript, fix any recognition mistakes, then grade your talk.`;
+  } else {
+    P.metrics = {seconds, pauses:0, conf:[], spoken:false};
+    $("pStatus").textContent = `${auto ? "Time’s up. " : ""}You spoke for ${len}. ${P._asr ? "No speech was transcribed." : ""} Type what you said in the box, then grade your talk.`;
+  }
+  pStage = "idle"; $("pPrep").disabled = false;
+  analyse();
+}
+$("pGrade").onclick = async () => {
+  const text = $("pDraft").value.trim();
+  if (text.split(/\s+/).filter(Boolean).length < 20){ $("pReport").innerHTML = `<p class="status" style="color:var(--warn)">Give your talk first (at least 20 words): speak it, or type what you said in the box.</p>`; return; }
+  const m = P.metrics || {spoken:false};
+  const spoken = !!m.spoken;
+  $("pGrade").disabled = true; showGrading($("pReport"));
+  const r = await grade(P, {text, seconds:m.seconds || null, pauses:m.pauses, conf:m.conf, notes:$("pNotes").value.trim()}, [], spoken);
+  const o = renderReport($("pReport"), r, spoken);
+  if (o != null){ store.grades[P.id] = o; store.done[P.id] = true; save(); renderProgress(); renderBook(); $("pDone").textContent = "Practised ✓"; }
+  $("pGrade").disabled = false;
+};
+function analyse(){
+  const txt = $("pDraft").value.trim();
+  if (P){ store.drafts[P.id] = $("pDraft").value; save(); }
+  if (!txt){ $("pFeedback").innerHTML = ""; return; }
+  const words = txt.split(/\s+/).filter(Boolean).length;
+  const mins = words / 130;
+  const est = `${Math.floor(mins)}:${String(Math.round((mins % 1) * 60)).padStart(2,"0")}`;
+  const sp = findIn(SIGNPOSTS, txt), lk = findIn(LINKERS, txt).filter(l => !SIGNPOSTS.includes(l));
+  let msg = words < 100 ? `<span style="color:var(--warn)">${words} words (about ${est} spoken): too short. Aim for 180–270 words.</span>`
+          : words < 170 ? `<span style="color:var(--warn)">${words} words (about ${est} spoken): acceptable, but keep going for longer.</span>`
+          : words <= 300 ? `<span style="color:var(--good)">${words} words (about ${est} spoken): a strong Part 2 length.</span>`
+          : `<span style="color:var(--warn)">${words} words: more than 2 minutes. The examiner would stop you before the end.</span>`;
+  msg += `<br>Signposting: ${sp.length ? sp.map(f => `<span class="chip">${f.replace(/'/g,"’")}</span>`).join("") : "<i>none yet. Try “The main reason…” or “Looking back…”.</i>"}`;
+  msg += `<br>Linking language: ${lk.length ? lk.map(f => `<span class="chip">${f}</span>`).join("") : "<i>none found yet.</i>"}`;
+  $("pFeedback").innerHTML = msg;
+}
+$("pDraft").addEventListener("input", analyse);
+$("pModel").onclick = () => {
+  const m = $("pModelText"); m.classList.toggle("open");
+  $("pModel").textContent = m.classList.contains("open") ? "Hide model answer" : "Compare with model answer";
+};
+$("pDone").onclick = () => {
+  store.done[P.id] = !store.done[P.id]; save();
+  $("pDone").textContent = store.done[P.id] ? "Practised ✓" : "Mark as practised";
+  renderProgress(); renderBook();
+};
+function score(){
+  const n = [...document.querySelectorAll("[data-c]")].filter(c => c.checked).length;
+  const band = n === 0 ? null : n <= 2 ? "around Band 5" : n <= 4 ? "around Band 6" : n <= 6 ? "around Band 7" : "around Band 7.5–8";
+  $("pScore").textContent = band ? `${n} of 8: ${band}. Use “Grade my talk” for a descriptor-based grade.` : "Tick the boxes to check yourself.";
+}
+document.querySelectorAll("[data-c]").forEach(c => c.addEventListener("change", score));
+function renderProgress(){
+  const total = CARDS.filter(c => store.done[c.id]).length;
+  const g = Object.values(store.grades || {});
+  const mocks = store.mocks || [];
+  $("pTotal").innerHTML = `${total} of ${CARDS.length} cards practised` +
+    (g.length ? `<br>Average graded band: <b>${(g.reduce((a,b)=>a+b,0)/g.length).toFixed(1)}</b> across ${g.length} talk${g.length>1?"s":""}` : "") +
+    (mocks.length ? `<br>Last mock test: <b>${mocks[mocks.length-1].band.toFixed(1)}</b>` : "");
+  $("pBars").innerHTML = CARDS.map(c => {
+    const b = store.grades[c.id];
+    return `<div class="b">${c.title} <span style="float:right;color:var(--muted)">${b != null ? "Band " + b.toFixed(1) : store.done[c.id] ? "Practised" : "–"}</span><div class="track"><span style="width:${b != null ? b/9*100 : store.done[c.id] ? 100 : 0}%"></span></div></div>`;
+  }).join("");
+}
+$("pReset").onclick = () => {
+  if (!confirm("Clear all practised marks, grades, notes and saved talks?")) return;
+  store = {done:{}, notes:{}, drafts:{}, grades:{}, mocks:[]}; save(); renderProgress(); renderBook(); pickCard(P && P.id);
+};
+
+/* ---------- routing ---------- */
+const VIEWS = ["home","book","mock","practice"];
+function route(){
+  const h = location.hash.replace("#","");
+  const v = VIEWS.includes(h) ? h : "home";
+  VIEWS.forEach(x => $("view-" + x).classList.toggle("on", x === v));
+  document.querySelectorAll("nav.tabs a").forEach(a => { if (a.dataset.v === v) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange", route);
+renderBook(); renderProgress(); pickCard(CARDS[0].id); route();
+try { speechSynthesis.getVoices(); } catch(e) {}
+
+</script>
+</body>
+</html>
